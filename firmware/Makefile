@@ -1,14 +1,15 @@
 #######################################################
 # Environment setup
+ARM_TOOLCHAIN_PATH = ../ARM-toolchain/gcc-arm-none-eabi-4_8-2014q2/bin/
 
 # toolchain
 DFU_SUFFIX = dfu-suffix
 DFU_UTIL = dfu-util
-CC = arm-none-eabi-gcc
-CXX = arm-none-eabi-g++
-OBJCOPY = arm-none-eabi-objcopy
-OBJDUMP = arm-none-eabi-objdump
-SIZE = arm-none-eabi-size
+CC = $(ARM_TOOLCHAIN_PATH)arm-none-eabi-gcc
+CXX = $(ARM_TOOLCHAIN_PATH)arm-none-eabi-g++
+OBJCOPY = $(ARM_TOOLCHAIN_PATH)arm-none-eabi-objcopy
+OBJDUMP = $(ARM_TOOLCHAIN_PATH)arm-none-eabi-objdump
+SIZE = $(ARM_TOOLCHAIN_PATH)arm-none-eabi-size
 
 # Bootloader to include in whole-chip .hex image
 FCBOOT_IMAGE = ../bin/pendant-boot-v110.hex
