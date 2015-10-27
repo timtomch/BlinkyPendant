@@ -38,13 +38,12 @@
 #include "buttons.h"
 #include "matrix.h"
 
-#include "animations/kinetisconnects.h"
-#include "animations/freescale.h"
-#include "animations/ftf2015.h"
-#include "animations/blinkinlabs.h"
-#include "animations/squiggle.h"
-#include "animations/dots.h"
-#include "animations/nyan-cat.h"
+#include "animations/chrutz.h"
+#include "animations/coeur.h"
+#include "animations/earlbetty.h"
+#include "animations/FIONA.h"
+#include "animations/I-love-YOU.h"
+#include "animations/maple.h"
 
 
 // Button inputs
@@ -57,15 +56,14 @@ extern Animation serialAnimation;
 Animation flashAnimation;
 
 // built-in animations
-#define builtinAnimationCount 8
+#define builtinAnimationCount 7
 Animation* builtinAnimations[builtinAnimationCount] = {
-    &ftfAnimation,
-    &squiggleAnimation,
-    &kinetisAnimation,
-    &dotsAnimation,
-    &freescaleAnimation,
-    &nyancatAnimation,
-    &blinkinlabsAnimation,
+    &fionaAnimation,
+    &earlBettyAnimation,
+    &iloveuAnimation,
+    &coeurAnimation,
+    &chrutzAnimation,
+    &mapleAnimation,
     &flashAnimation,
 };
 
