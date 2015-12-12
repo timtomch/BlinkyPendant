@@ -38,11 +38,11 @@
 #include "buttons.h"
 #include "matrix.h"
 
-#include "animations/chrutz.h"
+#include "animations/happyBD.h"
 #include "animations/coeur.h"
-#include "animations/earlbetty.h"
-#include "animations/FIONA.h"
-#include "animations/I-love-YOU.h"
+#include "animations/nyan.h"
+#include "animations/site3logo.h"
+#include "animations/yay.h"
 #include "animations/maple.h"
 
 
@@ -58,12 +58,12 @@ Animation flashAnimation;
 // built-in animations
 #define builtinAnimationCount 7
 Animation* builtinAnimations[builtinAnimationCount] = {
-    &fionaAnimation,
-    &earlBettyAnimation,
-    &iloveuAnimation,
-    &coeurAnimation,
-    &chrutzAnimation,
-    &mapleAnimation,
+    &site3animation,
+	&happyanimation,
+	&yayanimation,
+	&coeurAnimation,
+	&nyananimation,
+	&mapleAnimation,
     &flashAnimation,
 };
 
